@@ -32,6 +32,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     "0.0.0.0",  # noqa: B103
     "127.0.0.1",
+    "arcane-springs-06781.herokuapp.com",
 ]
 
 # Application definition
