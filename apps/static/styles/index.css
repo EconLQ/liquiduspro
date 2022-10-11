@@ -1,0 +1,227 @@
+/* Making all input data black */
+input {
+    color: black;
+}
+
+body {
+    color: antiquewhite;
+    background: fixed;
+}
+
+form {
+    color: gray;
+}
+
+/* Header custom code */
+
+#headerLogo {
+    padding: 0;
+    top: -2vh;
+    position: relative;
+}
+
+.dropdown_icons {
+    display: flex;
+    justify-content: center;
+}
+
+a.nav-link.dropdown-toggle {
+    color: white;
+}
+
+/* Editing header elements */
+#userGreetingDiv {
+    float: right;
+}
+
+#clientGreeting {
+    color: grey;
+    padding: 1em;
+}
+
+#clientGreeting:hover {
+    color: white;
+}
+
+#loginOrSignup {
+    color: white;
+}
+
+#loginOrSignup:hover {
+    color: white;
+    font-weight: bold;
+}
+
+#login-or-sign-up {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 1em;
+}
+
+#login-or-sign-up > a {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: gray;
+}
+
+#login-or-sign-up > a:hover {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: black;
+    font-style: italic;
+}
+
+/* Editing Login and Sign up forms */
+.signUp_form-parent {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signUp_form {
+    text-align: center;
+    position: relative;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 30vw;
+}
+
+.signUp_form label {
+    float: left;
+}
+
+.signUp_form small {
+    float: left;
+}
+
+.signUp_form form ul {
+    float: left;
+    color: gray;
+    padding: 10px;
+    font-size: 1.1em;
+}
+
+#hint_id_password2 {
+    color: gray !important;
+    font-size: 1em;
+}
+
+#sign-up-btn {
+    margin-top: 10px;
+}
+
+.login-div-parent {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-div-child {
+    text-align: center;
+}
+
+/* End of editing Login and Sign up forms*/
+
+/* Editing login and sign up buttons style */
+
+#login-button:hover,
+#sign-up-btn:hover {
+    color: white;
+}
+
+/* Editing login button style */
+
+.card-text {
+    font-size: 1.2em;
+    line-height: 3.2vh;
+    color: black;
+    text-align: justify;
+}
+
+#paginator {
+    display: flex;
+}
+
+/* Comments styles */
+.comments-titles {
+    color: #555555;
+}
+
+.comments {
+    padding: 10px;
+    color: black;
+    font-size: 1.2em;
+}
+
+.comments-count {
+    float: right;
+    position: relative;
+    color: #555555;
+}
+
+#commentAuthor {
+    color: black;
+    font-weight: bold;
+}
+
+#detailBlogContainer {
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+#backToBlogs {
+    font-size: 1.2em;
+    color: darkgreen;
+    padding: 10px;
+}
+
+/* Editing show all blogs page */
+.add_buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.add_buttons > a {
+    padding-left: 10px;
+}
+
+#editBlogBtn {
+    float: right;
+}
+
+.row {
+    width: 100%;
+}
+
+.add_blog_form-parent {
+    width: 60%;
+}
+
+select#id_author {
+    font-size: 1em;
+}
+
+/* Categories and Blogs view on the `blogs/` page */
+#blogsContainer {
+    display: flex;
+    width: 100%;
+}
+
+#categoriesList {
+    flex: 1;
+    /*margin-top: 15px;*/
+    height: 30vh;
+    float: right;
+}
+
+.category-item:hover {
+    font-weight: bold;
+}
+
+/* Detail blog CSS */
+div#detailBlogContainer img {
+    width: 100%;
+    height: auto;
+}
