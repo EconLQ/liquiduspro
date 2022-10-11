@@ -8,5 +8,12 @@
       <jdbc-url>jdbc:postgresql://localhost:5432/django_db</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="Heroku_db" uuid="36226dd9-7a7f-4837-99d8-ec4ab9c107dd">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://ec2-54-86-106-48.compute-1.amazonaws.com:5432/d8b30deolfisc</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>
