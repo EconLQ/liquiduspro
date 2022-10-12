@@ -8,7 +8,7 @@
         <div class="row" id="detailBlogContainer">
             <div class="col-md-8 card mb-4  mt-3 left  top">
                 <div class="card-body">
-                    {% if user.id == post.author.id or user.id == 1 %}
+                    {% if user.is_superuser %}
                         <a href="{% url 'blogs:edit' pk=post.pk %}">
                             <button type="button" class="btn btn-light" id="editBlogBtn">Edit blog 📝</button>
                         </a>
