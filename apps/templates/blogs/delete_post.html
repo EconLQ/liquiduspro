@@ -1,7 +1,7 @@
 {% extends '_helpers/_base.html' %}
 
 {% block body %}
-    {% if user.id == post.author.id or user.id == 1 %}
+    {% if user.is_superuser %}
         <div id="deleteConfirm">
             <h2>Delete Blog - <i><u>{{ post.title }}</u></i></h2>
 

@@ -1,0 +1,95 @@
+{% extends '_helpers/_base.html' %}
+{% block title %} Account Page {% endblock %}
+
+{% block body %}
+    <div class="profile-wrapper">
+        <div class="container pad-width">
+            <h1 id="se-profile-header">Account Settings</h1>
+        </div>
+        <hr>
+        <div class="sub-nav-container profile clearfix">
+            <div class="sub-nav-holder">
+                <div class="nav-bar sub-nav container pad-width">
+                    <a href="{% url 'clients:edit_profile' %}" target="_blank">Edit Profile</a>
+                    <a href="#">Manage
+                        Subscriptions</a>
+                    <a href="#">Credit Card
+                        Info</a>
+                    <a href="#">Receipts</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container pad-width edit-profile general">
+            <div class="row" data-general="" id="full_name">
+                <div class="col-xs-10">
+                    <div class="row">
+                        <div class="col-sm-3 title">
+                            <span class="glyphicon glyphicon-user"></span>
+                            Name
+                        </div>
+                        <div class="col-sm-9 details">
+                            <div class="display">
+                                {{ user.first_name }} {{ user.last_name }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" data-general="" id="email">
+                <div class="col-xs-10">
+                    <div class="row">
+                        <div class="col-sm-3 title">
+                            <span class="glyphicon glyphicon-envelope"></span>
+                            Email
+                        </div>
+                        <div class="col-sm-9 details">
+                            <div class="display">
+                                {{ user.email }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" data-general="" id="password">
+                <div class="col-xs-10">
+                    <div class="row">
+                        <div class="col-sm-3 title">
+                            <span class="glyphicon glyphicon-lock"></span>
+                            Password
+                        </div>
+                        <div class="col-sm-9 details">
+                            <div class="display">
+                                *******
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" data-general="" id="email_notifications">
+                <div class="col-xs-10">
+                    <div class="row">
+                        <div class="col-sm-3 title">
+                            <span class="glyphicon glyphicon-comment"></span>
+                            Email Notifications
+                        </div>
+                        <div class="col-sm-9 details">
+                            <div class="email-preferences">
+                                <div class="display row">
+                                    <div class="col-xs-6 check-wrapper">
+                                        <input type="checkbox" id="" disabled="disabled" checked="checked">
+                                        Subscribed Product
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
