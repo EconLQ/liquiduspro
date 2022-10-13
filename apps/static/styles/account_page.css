@@ -1,0 +1,24 @@
+/* Account page styles file */
+
+/* Small hint text */
+.text-muted {
+    color: #777 !important;
+}
+
+.col-xs-10,
+.nav-bar.sub-nav.container.pad-width {
+    padding: 5px;
+    font-size: 1.1em;
+}
+
+.col-xs-10 {
+    border-bottom: 1px solid #5445;
+}
+
+.nav-bar.sub-nav.container.pad-width > a {
+    padding: 5px;
+}
+
+.nav-bar.sub-nav.container.pad-width > a:hover {
+    color: #fff;
+}
