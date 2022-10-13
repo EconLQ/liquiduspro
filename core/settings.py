@@ -12,9 +12,9 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 import os.path
 from pathlib import Path
 
-import environ
-import django_heroku
 import dj_database_url  # flake8: noqa: F401
+import django_heroku
+import environ
 from decouple import config  # flake8: noqa: F401
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -27,8 +27,7 @@ env.read_env(BASE_DIR.joinpath(".env.proj"))
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = env.str("DJANGO__SECRET_KEY")
-SECRET_KEY = "django-insecure-mcv0h1*gja16xm2k^5m1^arb!alb7u(fe^s)@zt39+h+!k($v-"
+SECRET_KEY = env.str("DJANGO__SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
