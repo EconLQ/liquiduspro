@@ -56,8 +56,9 @@
             <div class="d-flex justify-content-center align-items-center"
                  id="userGreetingDiv">
                 {% if user.is_authenticated %}
-{#                    <div id="clientGreeting">Hi, <i>{{ user.username }}!</i></div>#}
-                    <div id="clientGreeting"><a href="{% url 'clients:account_page' %}">ACCOUNT</a></div>
+                    {#                    <div id="clientGreeting">Hi, <i>{{ user.username }}!</i></div>#}
+                    <div id="clientGreeting"><a href="{% url 'clients:account_page' %}" id="clientGreeting"
+                                                style="padding-right: 0;">ACCOUNT</a></div>
                     <div>
                         <a href="{% url 'logout' %}" id="clientGreeting">LOGOUT</a></div>
                 {% else %}
