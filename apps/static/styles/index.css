@@ -225,3 +225,8 @@ div#detailBlogContainer img {
     width: 100%;
     height: auto;
 }
+
+/* Add blog page code */
+input#id_header_image {
+    color: gray;
+}
