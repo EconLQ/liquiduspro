@@ -3,17 +3,23 @@
 {% block title %} Edit Account {% endblock %}
 
 {% block body %}
-    <h1>Edit account information</h1>
+    <h3 style="text-align: center">Edit account information</h3>
     <hr>
-    <div class="edit-profile-form">
-        <h1 class="h3 mb-3 fw-normal"></h1>
-        <form method="post" class="row g-3">
-            {% csrf_token %}
-            {{ form }}
-            <div class="col-12" style="text-align: center;">
-                <button type="submit" id="sign-up-btn" class="btn btn-success">Update
-                </button>
+    <div class="edit-profile-parent">
+        <div class="edit-profile-child">
+            <div class="edit-profile-form">
+                <form method="post" class="row g-3" style="padding: 10px;">
+                    {% csrf_token %}
+                    {{ form }}
+                    <div class="col-12" style="text-align: center;">
+                        <a href="{% url 'clients:account_page' %}" class="btn btn-primary" style="color: white;">&#8592
+                            Back to
+                            the account page</a>
+                        <button type="submit" class="btn btn-success">Update
+                        </button>
+                    </div>
+                </form>
             </div>
-        </form>
+        </div>
     </div>
 {% endblock %}
