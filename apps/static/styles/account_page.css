@@ -22,3 +22,28 @@
 .nav-bar.sub-nav.container.pad-width > a:hover {
     color: #fff;
 }
+
+/* Edit account information */
+.edit-profile-parent {
+    width: 50vw;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.edit-profile-child {
+    text-align: left;
+}
+
+/* Password Change page */
+.password-change-parent {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.password-change-child {
+    text-align: left;
+}

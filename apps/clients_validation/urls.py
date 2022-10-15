@@ -3,7 +3,7 @@ from django.urls import path
 
 from apps.clients_validation import views
 from apps.clients_validation.account_page_views import AccountPageView, \
-    PasswordsChangeView
+    PasswordsChangeView, password_success
 
 app_name = "clients"
 
@@ -14,4 +14,5 @@ urlpatterns = [
          name="account_page"),
     path("password/", login_required(PasswordsChangeView.as_view(template_name='clients/change_password.html')),
          name="password_change"),
+    path("password_success", login_required(password_success), name="password_success"),
 ]
