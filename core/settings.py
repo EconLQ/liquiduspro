@@ -27,8 +27,8 @@ env.read_env(BASE_DIR.joinpath(".env.proj"))
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = env.str("DJANGO__SECRET_KEY")
-SECRET_KEY = "django-insecure-mcv0h1*gja16xm2k^5m1^arb!alb7u(fe^s)@zt39+h+!k($v-"
+SECRET_KEY = env.str("DJANGO__SECRET_KEY")
+# SECRET_KEY = "django-insecure-mcv0h1*gja16xm2k^5m1^arb!alb7u(fe^s)@zt39+h+!k($v-"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -100,25 +100,25 @@ WSGI_APPLICATION = "core.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-# DATABASES = {
-#     "default": env.db_url_config(
-#         env.str(
-#             "DB_URL",
-#             f'postgresql://{env("POSTGRES_USER")}:{env("POSTGRES_PASSWORD")}@'
-#             f'{env("POSTGRES_HOST")}:{env("POSTGRES_PORT")}/{env("POSTGRES_DB")}',
-#         )
-#     ),
-# }
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'd8b30deolfisc',
-        'HOST': 'ec2-54-86-106-48.compute-1.amazonaws.com',
-        'PORT': 5432,
-        'USER': 'oengzpveuymvzr',
-        'PASSWORD': '8fcced9e1fc2aa757902fca46b2dda9f56da37896ee278299c771fe64e7646b7'
-    }
+    "default": env.db_url_config(
+        env.str(
+            "DB_URL",
+            f'postgresql://{env("POSTGRES_USER")}:{env("POSTGRES_PASSWORD")}@'
+            f'{env("POSTGRES_HOST")}:{env("POSTGRES_PORT")}/{env("POSTGRES_DB")}',
+        )
+    ),
 }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'd8b30deolfisc',
+#         'HOST': 'ec2-54-86-106-48.compute-1.amazonaws.com',
+#         'PORT': 5432,
+#         'USER': 'oengzpveuymvzr',
+#         'PASSWORD': '8fcced9e1fc2aa757902fca46b2dda9f56da37896ee278299c771fe64e7646b7'
+#     }
+# }
 # # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
 
