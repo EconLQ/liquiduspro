@@ -1,9 +1,10 @@
-from .models import Comment, Post, PostCategory
 from django import forms
 
+from .models import Comment, Post
+
 # name cals two times in values_list() to get correct feedback from database
-CATEGORY_CHOICES = PostCategory.objects.all().values_list("name", "name")
-CATEGORY_CHOICES_LIST = list(CATEGORY_CHOICES)
+# CATEGORY_CHOICES = PostCategory.objects.all().values_list("name", "name")
+CATEGORY_CHOICES_LIST = []
 
 
 class BlogForm(forms.ModelForm):
