@@ -10,7 +10,7 @@ CATEGORY_CHOICES_LIST = list(CATEGORY_CHOICES)
 class BlogForm(forms.ModelForm):
     class Meta:
         model = Post
-        fields = ("title", "slug", "author", "blog_category", "content", "snippet")
+        fields = ("title", "slug", "author", "blog_category", "header_image", "content", "snippet")
         widgets = {
             "title": forms.TextInput(attrs={"class": "form-control"}),
             "slug": forms.TextInput(attrs={"class": "form-control"}),

@@ -1,11 +1,12 @@
+from django.conf import settings
+from django.conf.urls.static import static
 from django.contrib.auth.decorators import login_required
-
-from . import views
 from django.urls import path, include
 
-from .views import AddBlogView, PostDetailView
-from .categories_views.add_category import AddCategoryView
 from apps.blog.categories_views.category_veiw import category_view
+from . import views
+from .categories_views.add_category import AddCategoryView
+from .views import AddBlogView, PostDetailView
 
 app_name = "blogs"
 
@@ -26,3 +27,5 @@ urlpatterns = [
     ),
     path("like/<int:pk>", views.like_view, name="like_post"),
 ]
+
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
