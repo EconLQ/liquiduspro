@@ -227,6 +227,6 @@ div#detailBlogContainer img {
 }
 
 /* Add blog page code */
-input#id_header_image {
+#id_header_image {
     color: gray;
 }
