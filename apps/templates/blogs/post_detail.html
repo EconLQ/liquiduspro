@@ -23,6 +23,9 @@
                     href="{% url 'blogs:category' cats=post.blog_category|slugify %}" target="_blank"
                     class="card-text text-muted h6"><i>{{ post.blog_category }}</i></a>
                     <p></p>
+                    {% if post.header_image %}
+                        <img src="{{ post.header_image.url }}" alt="header image">
+                    {% endif %}
                     <p class="card-text">{{ post.content | safe }}</p>
                     <br>
                     <!--  Adding likes to the post  -->

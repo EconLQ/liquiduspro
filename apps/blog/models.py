@@ -1,7 +1,8 @@
+from ckeditor.fields import RichTextField
 from django.db import models
 from django.urls import reverse
+
 from apps.clients_validation.models import AbstractClient
-from ckeditor.fields import RichTextField
 
 STATUS = ((0, "Draft"), (1, "Publish"))
 
@@ -20,6 +21,7 @@ class PostCategory(models.Model):
 
 class Post(models.Model):
     title = models.CharField(max_length=200, unique=True)
+    header_image = models.ImageField(null=True, blank=True, upload_to="apps/static/img/blog_images")
     slug = models.SlugField(max_length=200, unique=True)
     author = models.ForeignKey(AbstractClient, on_delete=models.CASCADE, related_name="blog_posts")
     updated_on = models.DateTimeField(auto_now=True)
