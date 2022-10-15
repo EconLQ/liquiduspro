@@ -1,5 +1,6 @@
-from .models import Comment, Post, PostCategory
 from django import forms
+
+from .models import Comment, Post, PostCategory
 
 # name cals two times in values_list() to get correct feedback from database
 CATEGORY_CHOICES = PostCategory.objects.all().values_list("name", "name")
