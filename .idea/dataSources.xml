@@ -8,11 +8,18 @@
       <jdbc-url>jdbc:postgresql://localhost:5432/django_db</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
-    <data-source source="LOCAL" name="Heroku_db" uuid="36226dd9-7a7f-4837-99d8-ec4ab9c107dd">
+    <data-source source="LOCAL" name="New_PSQL_db" uuid="a67aba0d-6dd1-484e-be16-471a4bd56ab4">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://ec2-54-86-106-48.compute-1.amazonaws.com:5432/d8b30deolfisc</jdbc-url>
+      <jdbc-url>jdbc:postgresql://ec2-23-20-140-229.compute-1.amazonaws.com:5432/depmbl763o3bvi</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="LQ_journal" uuid="0c447631-ad2a-4218-a2a7-ffb7af5b5f2d">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://ec2-34-192-210-139.compute-1.amazonaws.com:5432/d90hkbmivmj28b</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>
